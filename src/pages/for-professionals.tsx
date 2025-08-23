@@ -32,8 +32,8 @@ const ForProfessionalsPage = () => {
   return (
     <>
       <Head>
-        <title>医療従事者・投資家向け - 包括的生理管理アプリ</title>
-        <meta name="description" content="医療従事者や投資家の方向けに、包括的生理管理アプリの社会的意義とビジネス機会をご紹介します" />
+        <title>医療従事者・外部の方へ - にじライフ</title>
+        <meta name="description" content="医療従事者や外部の方へ向けたにじライフの活動紹介" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -51,10 +51,10 @@ const ForProfessionalsPage = () => {
               className="text-center"
             >
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                医療従事者・投資家向け
+                医療従事者・外部の方へ
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                包括的生理管理アプリの社会的意義とビジネス機会をご紹介します
+                にじライフの活動と社会的意義をご紹介します
               </p>
             </motion.div>
           </div>
@@ -86,10 +86,10 @@ const ForProfessionalsPage = () => {
                 viewport={{ once: true }}
                 className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500"
               >
-                <div className="text-3xl font-bold text-red-600 mb-2">73%</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">医療機関での差別体験</h3>
+                <div className="text-3xl font-bold text-red-600 mb-2">81.3%</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">医療関係者に話せない</h3>
                 <p className="text-gray-600">
-                  性的少数者の73%が医療機関で差別的な扱いを受けた経験がある
+                  LGBTQの81.3%が医療関係者にセクシュアリティについて安心して話せない
                 </p>
               </motion.div>
 
@@ -100,10 +100,10 @@ const ForProfessionalsPage = () => {
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-500"
               >
-                <div className="text-3xl font-bold text-orange-600 mb-2">58%</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">受診の遅れ</h3>
+                <div className="text-3xl font-bold text-orange-600 mb-2">66.1%</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">過去10年の困難経験</h3>
                 <p className="text-gray-600">
-                  性的少数者の58%が差別を恐れて受診を遅らせた経験がある
+                  LGBTQの66.1%が過去10年で医療サービス利用時にセクシュアリティ関連の困難を経験
                 </p>
               </motion.div>
 
@@ -114,12 +114,17 @@ const ForProfessionalsPage = () => {
                 viewport={{ once: true }}
                 className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500"
               >
-                <div className="text-3xl font-bold text-purple-600 mb-2">85%</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">情報不足</h3>
+                <div className="text-3xl font-bold text-purple-600 mb-2">77.8%</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">トランスジェンダーの困難</h3>
                 <p className="text-gray-600">
-                  性的少数者に配慮した医療機関の情報が不足していると感じている
+                  トランスジェンダー男性・女性の77.8%が医療サービス利用時に困難を経験
                 </p>
               </motion.div>
+            </div>
+            <div className="text-center mt-6">
+              <p className="text-sm text-gray-500 italic">
+                （認定NPO法人ReBitの「LGBTQ医療福祉調査2023」より引用）
+              </p>
             </div>
 
             <motion.div
@@ -131,11 +136,154 @@ const ForProfessionalsPage = () => {
             >
               <h3 className="text-2xl font-bold mb-4">社会的インパクト</h3>
               <p className="text-lg">
-                このプロジェクトは、性的少数者の医療アクセス問題を解決し、
+                このプロジェクトは、LGBTQ+当事者の医療アクセス問題を解決し、
                 すべての人々が安心して医療ケアを受けられる社会の実現を目指しています。
                 医療の質の向上と社会的包摂の促進に大きく貢献します。
               </p>
             </motion.div>
+
+            {/* Additional Statistics */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.0 }}
+              viewport={{ once: true }}
+              className="mt-8 bg-white p-8 rounded-lg shadow-lg"
+            >
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">深刻な医療問題の実態</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">トランスジェンダーが直面する問題</h4>
+                  <ul className="space-y-3 text-gray-600">
+                    <li className="flex items-start">
+                      <span className="text-red-600 font-bold mr-2">75.9%</span>
+                      <span>セクシュアリティ関連の困難により問題が深刻化</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 font-bold mr-2">42.0%</span>
+                      <span>体調が悪くても病院に行けなくなった</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 font-bold mr-2">25.9%</span>
+                      <span>自殺を考えた/自殺未遂を経験</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">障害・難病があるLGBTQの状況</h4>
+                  <ul className="space-y-3 text-gray-600">
+                    <li className="flex items-start">
+                      <span className="text-red-600 font-bold mr-2">71.4%</span>
+                      <span>セクシュアリティ関連の困難を医療で経験</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 font-bold mr-2">34.7%</span>
+                      <span>体調不良でも病院に行けなくなった</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 font-bold mr-2">30.9%</span>
+                      <span>自殺念慮・未遂を経験</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 font-bold mr-2">26.0%</span>
+                      <span>体調不良・病状悪化に直結</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="text-center mt-6">
+                <p className="text-sm text-gray-500 italic">
+                  （認定NPO法人ReBitの「LGBTQ医療福祉調査2023」より引用）
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Healthcare Issues Section */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                具体的な医療現場での問題例
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                認定NPO法人ReBitの調査から明らかになった、医療現場での具体的な問題をご紹介します
+              </p>
+            </motion.div>
+
+            <div className="grid lg:grid-cols-2 gap-12">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-red-50 p-8 rounded-lg border-l-4 border-red-500"
+              >
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">医療者の無理解による困難</h3>
+                <ul className="space-y-4 text-gray-700">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-red-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                    </svg>
+                    <span>トランスジェンダーであることを理由に適切な診断を受けられない</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-red-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                    </svg>
+                    <span>ホルモン投与を理由に専門外として診療を拒否される</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-red-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                    </svg>
+                    <span>医療者からの差別的な発言や視線</span>
+                  </li>
+                </ul>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-orange-50 p-8 rounded-lg border-l-4 border-orange-500"
+              >
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">医療システム上の問題</h3>
+                <ul className="space-y-4 text-gray-700">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                    </svg>
+                    <span>診察券や受付票での戸籍上の性別表示による苦痛</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                    </svg>
+                    <span>入院時の部屋割りやシャワー利用での配慮不足</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                    </svg>
+                    <span>同性パートナーが家族として認められない（面会、説明、保証人等）</span>
+                  </li>
+                </ul>
+              </motion.div>
+            </div>
+            <div className="text-center mt-6">
+              <p className="text-sm text-gray-500 italic">
+                （認定NPO法人ReBitの「LGBTQ医療福祉調査2023」より引用）
+              </p>
+            </div>
           </div>
         </section>
 
@@ -273,209 +421,9 @@ const ForProfessionalsPage = () => {
           </div>
         </section>
 
-        {/* Market Opportunity Section */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-7xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                市場機会
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                デジタルヘルスケア市場とLGBTQ+市場の成長性をご紹介します
-              </p>
-            </motion.div>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-8 rounded-lg"
-              >
-                <h3 className="text-2xl font-bold mb-4">デジタルヘルスケア市場</h3>
-                <div className="space-y-4">
-                  <div>
-                    <div className="text-3xl font-bold mb-2">$659B</div>
-                    <p className="text-blue-100">2025年予測市場規模</p>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold mb-2">25.9%</div>
-                    <p className="text-blue-100">年間成長率（CAGR）</p>
-                  </div>
-                  <p className="text-blue-100">
-                    新型コロナウイルスの影響により、デジタルヘルスケアの需要が急激に増加し、
-                    遠隔医療や健康管理アプリの市場が拡大しています。
-                  </p>
-                </div>
-              </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-gradient-to-br from-green-500 to-green-600 text-white p-8 rounded-lg"
-              >
-                <h3 className="text-2xl font-bold mb-4">LGBTQ+市場</h3>
-                <div className="space-y-4">
-                  <div>
-                    <div className="text-3xl font-bold mb-2">$3.7T</div>
-                    <p className="text-green-100">世界の購買力</p>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold mb-2">7.1%</div>
-                    <p className="text-green-100">米国成人人口の割合</p>
-                  </div>
-                  <p className="text-green-100">
-                    LGBTQ+コミュニティは大きな経済力を持ち、包括的なサービスを求める声が高まっています。
-                    特に医療分野でのニーズは顕著です。
-                  </p>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
 
-        {/* Contact Form Section */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-green-50">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                お問い合わせ
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                提携や投資に関するお問い合わせは、以下のフォームからお気軽にお寄せください
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-lg shadow-lg p-8"
-            >
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      お名前 *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      メールアドレス *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="organization" className="block text-sm font-medium text-gray-700 mb-2">
-                      組織名
-                    </label>
-                    <input
-                      type="text"
-                      id="organization"
-                      name="organization"
-                      value={formData.organization}
-                      onChange={handleChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="role" className="block text-sm font-medium text-gray-700 mb-2">
-                      役職
-                    </label>
-                    <input
-                      type="text"
-                      id="role"
-                      name="role"
-                      value={formData.role}
-                      onChange={handleChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="type" className="block text-sm font-medium text-gray-700 mb-2">
-                    お問い合わせ種別 *
-                  </label>
-                  <select
-                    id="type"
-                    name="type"
-                    value={formData.type}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  >
-                    <option value="healthcare">医療機関からの提携相談</option>
-                    <option value="investment">投資相談</option>
-                    <option value="partnership">その他の提携相談</option>
-                    <option value="other">その他</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    お問い合わせ内容 *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={6}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    placeholder="詳細なお問い合わせ内容をご記入ください"
-                  />
-                </div>
-
-                <div className="text-center">
-                  <button
-                    type="submit"
-                    className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                  >
-                    送信する
-                  </button>
-                </div>
-              </form>
-            </motion.div>
-          </div>
-        </section>
 
         <Footer />
       </div>

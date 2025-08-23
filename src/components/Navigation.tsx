@@ -15,7 +15,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
-              生理ケア
+              にじライフ
             </Link>
           </div>
           <div className="hidden md:block">
@@ -23,8 +23,8 @@ const Navigation = () => {
               <Link
                 href="/"
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive('/')
-                    ? 'text-gray-900'
-                    : 'text-gray-500 hover:text-blue-600'
+                  ? 'text-gray-900'
+                  : 'text-gray-500 hover:text-blue-600'
                   }`}
               >
                 ホーム
@@ -32,20 +32,29 @@ const Navigation = () => {
               <Link
                 href="/about"
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive('/about')
-                    ? 'text-gray-900'
-                    : 'text-gray-500 hover:text-blue-600'
+                  ? 'text-gray-900'
+                  : 'text-gray-500 hover:text-blue-600'
                   }`}
               >
-                アプリについて
+                About Us
               </Link>
               <Link
                 href="/for-professionals"
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive('/for-professionals')
-                    ? 'text-gray-900'
-                    : 'text-gray-500 hover:text-blue-600'
+                  ? 'text-gray-900'
+                  : 'text-gray-500 hover:text-blue-600'
                   }`}
               >
-                医療従事者・投資家向け
+                医療従事者・外部の方へ
+              </Link>
+              <Link
+                href="/contact"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive('/contact')
+                  ? 'text-gray-900'
+                  : 'text-gray-500 hover:text-blue-600'
+                  }`}
+              >
+                お問い合わせ
               </Link>
             </div>
           </div>
